@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="fireGrad" x1="16" y1="56" x2="48" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff3b14"/>
+      <stop offset="45%" stop-color="#ff7a18"/>
+      <stop offset="100%" stop-color="#ffca28"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="26" y1="50" x2="38" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff7a18"/>
+      <stop offset="100%" stop-color="#fff3b0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background rounded box -->
+  <rect width="64" height="64" rx="16" fill="#0b0d14"/>
+  <rect width="64" height="64" rx="16" stroke="rgba(255, 100, 30, 0.3)" stroke-width="1.5"/>
+  
+  <!-- Outer flame silhouette -->
+  <path d="M32 10C32 10 39 19 39 27C39 30.5 37.5 33 36 35C41 34 45 38 45 43C45 50.18 39.18 56 32 56C24.82 56 19 50.18 19 43C19 35.8 24.5 28.5 28 23C28.8 28.5 32 30 32 30C32 30 31.5 21 32 10Z" fill="url(#fireGrad)" filter="url(#glow)"/>
+  
+  <!-- Inner core flame -->
+  <path d="M32 26C33.5 30 35.5 33 35 37C34.5 40 32 42 32 44C32 47 34 49 32 51C29 51 27 48 27 44C27 38.5 30 34 32 26Z" fill="url(#coreGrad)"/>
+  
+  <!-- Digital byte accent dots -->
+  <rect x="42" y="16" width="3.5" height="3.5" rx="1" fill="#ff9e3b" opacity="0.85"/>
+  <rect x="48" y="24" width="3" height="3" rx="0.8" fill="#ffc107" opacity="0.75"/>
+  <rect x="15" y="20" width="3" height="3" rx="0.8" fill="#ff5722" opacity="0.8"/>
+  <rect x="18" y="32" width="2.5" height="2.5" rx="0.6" fill="#ff7043" opacity="0.7"/>
+</svg>

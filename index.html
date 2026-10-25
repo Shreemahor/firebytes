@@ -3,9 +3,244 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Firebytes</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Firebytes AI Bootcamp — Official Landing Page</title>
+    <meta name="title" content="Firebytes AI Bootcamp — Official Landing Page">
+    <meta name="description" content="You have reached the official website for the Firebytes AI Bootcamp. Comprehensive curriculum, cohort schedules, and admissions information coming soon to firebytes.dev.">
+    <meta name="keywords" content="Firebytes, AI Bootcamp, Artificial Intelligence, Machine Learning, LLMs, Agentic Systems, AI Engineering">
+    <meta name="author" content="Firebytes">
+    <meta name="theme-color" content="#07080d">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://firebytes.dev/">
+    <meta property="og:title" content="Firebytes AI Bootcamp — Official Landing Page">
+    <meta property="og:description" content="Official portal for the Firebytes AI Bootcamp. Engineering next-generation AI builders. More information coming soon.">
+    <meta property="og:site_name" content="Firebytes AI Bootcamp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://firebytes.dev/">
+    <meta property="twitter:title" content="Firebytes AI Bootcamp — Official Landing Page">
+    <meta property="twitter:description" content="Official portal for the Firebytes AI Bootcamp. Engineering next-generation AI builders. More information coming soon.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Working Website with Custom Domain! :)</h1>
+    <!-- Background Ambient Lighting & Dust -->
+    <div class="bg-ambient" aria-hidden="true">
+      <div class="bg-grid"></div>
+      <div class="glow-orb glow-orb-top"></div>
+      <div class="glow-orb glow-orb-side"></div>
+      <div class="glow-orb glow-orb-bottom"></div>
+    </div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <div class="page-wrapper">
+      <!-- Site Header -->
+      <header class="site-header">
+        <a href="https://firebytes.dev" class="brand-container" id="brandHeaderLink" aria-label="Firebytes Home">
+          <div class="brand-logo-wrap">
+            <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 10C32 10 39 19 39 27C39 30.5 37.5 33 36 35C41 34 45 38 45 43C45 50.18 39.18 56 32 56C24.82 56 19 50.18 19 43C19 35.8 24.5 28.5 28 23C28.8 28.5 32 30 32 30C32 30 31.5 21 32 10Z" fill="url(#brandFlameGrad)"/>
+              <path d="M32 26C33.5 30 35.5 33 35 37C34.5 40 32 42 32 44C32 47 34 49 32 51C29 51 27 48 27 44C27 38.5 30 34 32 26Z" fill="#ffca28"/>
+              <defs>
+                <linearGradient id="brandFlameGrad" x1="16" y1="56" x2="48" y2="8" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#ff381e"/>
+                  <stop offset="50%" stop-color="#ff7a18"/>
+                  <stop offset="100%" stop-color="#ffbe3b"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">Firebytes</span>
+            <span class="brand-tag">AI Bootcamp</span>
+          </div>
+        </a>
+
+        <div class="header-status-pill" id="headerStatusPill">
+          <span class="status-dot"></span>
+          <span>Official Portal • In Development</span>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero-section" aria-labelledby="heroTitle">
+          <div class="badge-tag">
+            <span class="badge-sparkle">✦</span>
+            <span>Firebytes AI Bootcamp • Cohort 1 Underway</span>
+          </div>
+
+          <h1 class="hero-title" id="heroTitle">
+            Engineering the Next Generation of <span class="gradient-text">AI Builders.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            You have reached the official website for <strong>Firebytes AI Bootcamp</strong>. We are actively shaping an intensive, project-first bootcamp designed to take software engineers and creators to the frontiers of applied artificial intelligence.
+          </p>
+
+          <!-- Verified Notice -->
+          <div class="verified-banner" id="verifiedNotice">
+            <div class="verified-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="verified-content">
+              <h2>You’re in the right place!</h2>
+              <p>This is the verified domain (<span class="verified-domain">firebytes.dev</span>). Full curriculum details, guest instructor reveals, and application timelines will be posted here soon.</p>
+            </div>
+          </div>
+
+          <!-- Notification / Stay Updated Box -->
+          <div class="notify-card" id="notifyCard">
+            <div class="notify-header">
+              <h3>Be the First to Know</h3>
+              <p>Leave your email below for priority notification the moment applications and syllabus details drop.</p>
+            </div>
+
+            <form class="notify-form" id="waitlistForm" novalidate>
+              <div class="input-wrapper">
+                <input 
+                  type="email" 
+                  id="emailInput" 
+                  class="email-input" 
+                  placeholder="name@domain.com" 
+                  aria-label="Email address for bootcamp notification" 
+                  required
+                >
+              </div>
+              <button type="submit" class="submit-btn" id="submitBtn">
+                <span>Notify Me</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <!-- Sneak Peek Tracks / Pillars -->
+        <section class="pillars-section" aria-labelledby="curriculumPreviewTitle">
+          <div class="section-label">
+            <span class="section-tag">What's In The Pipeline</span>
+            <h3 class="section-title" id="curriculumPreviewTitle">Core Curriculum Focus Areas</h3>
+          </div>
+
+          <div class="pillars-grid">
+            <!-- Pillar 1 -->
+            <article class="pillar-card" id="pillarAgentic">
+              <span class="pillar-index">01 / AUTONOMY</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h4>Agentic Systems & Orchestration</h4>
+              <p>Autonomous task execution, tool-calling pipelines, memory abstractions, self-evaluating loops, and multi-agent systems designed for production reliability.</p>
+            </article>
+
+            <!-- Pillar 2 -->
+            <article class="pillar-card" id="pillarInfrastructure">
+              <span class="pillar-index">02 / FOUNDATIONS</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h4>Applied LLMs & RAG Architectures</h4>
+              <p>Mastering fine-tuning, embedding spaces, hybrid retrieval systems, vector stores, and robust evaluation harnesses that eliminate hallucinations.</p>
+            </article>
+
+            <!-- Pillar 3 -->
+            <article class="pillar-card" id="pillarCapstone">
+              <span class="pillar-index">03 / APPLICATION</span>
+              <div class="pillar-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h4>Production Ship & Capstones</h4>
+              <p>Bridging the gap between toy prototypes and scalable, enterprise-grade AI products with continuous evaluation, caching, latency optimization, and deployment.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- System Diagnostics / Terminal Preview -->
+        <section class="terminal-section" aria-labelledby="termStatusTitle">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="terminal-dots" aria-hidden="true">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+              </div>
+              <span class="terminal-title" id="termStatusTitle">firebytes-system-status — zsh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-val">firebytes-cli ping --target firebytes.dev</span>
+              </div>
+              <div class="term-line">
+                <span class="term-prompt">›</span>
+                <span class="term-val highlight">STATUS: 200 OK — Verified Deployment on Custom Domain</span>
+              </div>
+              <div class="term-line">
+                <span class="term-prompt">›</span>
+                <span class="term-val">COHORT: Firebytes AI Bootcamp (Cohort 1)</span>
+              </div>
+              <div class="term-line">
+                <span class="term-prompt">›</span>
+                <span class="term-val warning">CURRICULUM: In active preparation & curriculum review</span>
+              </div>
+              <div class="term-line">
+                <span class="term-prompt">›</span>
+                <span class="term-val">TIMESTAMP: <span id="termTimestamp">Loading...</span></span>
+              </div>
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-val">stay tuned for enrollment announcement<span class="term-cursor"></span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="mailto:contact@firebytes.dev" class="footer-link" id="contactLink">Inquiries: contact@firebytes.dev</a>
+          <span style="color: var(--border-subtle);">&bull;</span>
+          <a href="https://github.com/Shreemahor/firebytes" class="footer-link" target="_blank" rel="noopener noreferrer" id="githubLink">GitHub Repository</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 Firebytes AI Bootcamp. All rights reserved. Host: <span class="footer-domain">firebytes.dev</span>
+        </p>
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
