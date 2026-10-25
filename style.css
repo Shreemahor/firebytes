@@ -16,6 +16,7 @@ a{color:inherit}
 .hero::after{width:320px;height:320px;bottom:-140px;left:-60px;background:rgba(184,194,32,.6)}
 .hero-left,.hero-right{position:relative;z-index:2}
 .presented{font-size:1.1rem;color:var(--y);margin-bottom:6px}
+.season{font-size:1.9rem;color:var(--y);text-shadow:0 2px 0 rgba(150,40,0,.3);margin-bottom:8px}
 .wordmark{font-weight:400;font-size:clamp(4.5rem,11vw,9rem);line-height:.95;letter-spacing:-2px;text-shadow:0 5px 0 rgba(150,40,0,.3);transform:rotate(-3deg);margin:8px 0 28px}
 .wordmark .fire{color:#fff}.wordmark .bytes{color:var(--y)}
 .tagline{font-size:1.7rem;text-shadow:0 2px 0 rgba(150,40,0,.3);margin-bottom:26px}
