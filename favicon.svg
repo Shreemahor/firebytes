@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
     <linearGradient id="fireGrad" x1="16" y1="56" x2="48" y2="8" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ff3b14"/>
-      <stop offset="45%" stop-color="#ff7a18"/>
-      <stop offset="100%" stop-color="#ffca28"/>
+      <stop offset="0%" stop-color="#1230a8"/>
+      <stop offset="45%" stop-color="#3d6bff"/>
+      <stop offset="100%" stop-color="#7fa8ff"/>
     </linearGradient>
     <linearGradient id="coreGrad" x1="26" y1="50" x2="38" y2="22" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ff7a18"/>
-      <stop offset="100%" stop-color="#fff3b0"/>
+      <stop offset="0%" stop-color="#3d6bff"/>
+      <stop offset="100%" stop-color="#dfe9ff"/>
     </linearGradient>
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
